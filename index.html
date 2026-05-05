@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BnB Website</title>
+
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="banner-background"></section>
+        
+    <!-- HEADER -->     <!-- CHECK FORM -->
+    <nav class="navbar navbar-expand-md custom-navbar fixed-top">
+        <div class="container-fluid px-5">
+            <h1>Snapdragon Inn</h1>
+
+            <div id="check-form" class="check-form-container">
+            <form id="avail-check-form" action="https://www.hotelsone.com/baltimore-hotels-us/hotel-ulysses-a-member-of-design-hotels.html" class="avail-check-form">
+                <input type="hidden" name="q" value=""> 
+                <input type="hidden" name="frm" value="9"> 
+                <input type="hidden" name="dsts" value=""> 
+                <input type="hidden" name="wa" value="0"> 
+                <div class="fields-container">
+                    <div class="field-group field-group-dates">
+                        <label>Check-in date:</label> 
+                        <div class="date-text-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg> 
+                            <button type="button" class="checkin-text">
+                                Fri 1 May</button>
+                        </div>
+                    </div> 
+                    <div class="field-group field-group-dates field-group-checkout">
+                        <label>Check-out date:</label> 
+                        <div class="date-text-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg> 
+                            <button type="button" class="checkout-text">
+                                Sat 2 May</button>
+                        </div>
+                    </div> 
+                    <div class="field-group-btn">
+                        <button type="submit" title="Check availability" alt="Check availability" class="button">
+                            Check availability</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>        
+
+    <!-- INTRO/ABOUT -->
+    <section id="about-section">
+        <div class="container about-container col-xxl-6 px-4 "> 
+           
+            <div class="row flex-lg-row-reverse justify-content-center g-5 py-5"> 
+                <div class="col-10 col-sm-8 col-lg-6 welcome-img"> 
+                    <img src="./images/door.PNG" class="d-block img-fluid" alt="Entryway door image" loading="lazy"> 
+                </div> 
+                <div class="col-lg-6"> 
+                    <h2 class="display-5 lh-1 mt-3"> Welcome !</h2> 
+
+                    <p class="mb-4">
+                    Nestled among rolling vineyards and quiet country lanes, the Snapdragon Inn is a place to slow down and savor what matters. Designed with couples in mind, our bed and breakfast offers a refined yet welcoming escape where the pace is gentle, the atmosphere is intimate, and every detail invites connection.</p>
+
+                    <p class="mb-4"> 
+                    Here, we trade screens for sunsets and notifications for long, unhurried conversations. Mornings begin with thoughtfully prepared breakfasts, and days unfold with curated wine tours, scenic walks, or simply time spent together in peaceful surroundings.</p>
+
+                    <p class="mb-4">
+                    Whether you’re celebrating something special or just seeking a moment away, the Snapdragon Inn is your retreat for romance, relaxation, and the simple luxury of being present.</p>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
+                        <button type="button" class="btn btn-sm px-4 me-md-2 ms-auto">About the Inn
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </button> 
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- AVAILABILITY -->
+
+    <!-- DIVIDER IMAGE -->
+    <div class="text-center pt-5 pb-3">
+        <h2 class="display-5 fw-bold text-body-emphasis">Amenities</h2>
+        <img src="./images/dividerA.PNG" class="d-block mx-auto" width="50%" height="30px">
+    </div>
+
+    <!-- AMENITITES -->  
+    <section id="amenities-section">
+        <div class="carousel-wrapper">
+            <div class="carousel-track">
+                    <!--CARD 1 -->
+                    <div class="carousel-card"> 
+                        <div class="card h-100">
+                            <img src="./images/breakfast.PNG"  class="card-img-top img-fluid"> 
+                            <div class="card-body"> 
+                                <h3>Farm-to-Table Breakfast</h3>
+                                <p class="card-text">Wake to a thoughtfully prepared breakfast featuring fresh, locally sourced ingredients and flavors that celebrate the region.</p> 
+                                <div class="d-flex justify-content-between align-items-center"> 
+                                    <div class="btn-group"> 
+                                        <button type="button" class="btn btn-sm btn-outline-light">More Info
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                            </svg>
+                                        </button>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--CARD 2 -->
+                    <div class="carousel-card"> 
+                        <div class="card shadow-sm h-100"> 
+                            <img src="./images/firepit.PNG" class="card-img-top img-fluid">
+                            <div class="card-body"> 
+                                <h3>Fireside Lounges</h3>
+                                <p class="card-text">Cozy up beside crackling fireplaces with a glass of red in hand—no distractions, just warmth and each other.</p> 
+                                <div class="d-flex justify-content-between align-items-center"> 
+                                    <div class="btn-group"> 
+                                        <button type="button" class="btn btn-sm btn-outline-light">More Info
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                            </svg>
+                                        </button> 
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <!--CARD 3 -->
+                    <div class="carousel-card"> 
+                        <div class="card shadow-sm h-100"> 
+                            <img src="./images/tub.PNG" class="card-img-top img-fluid">
+                            <div class="card-body"> 
+                                <h3>Deep Soaking Tubs</h3>
+                                <p class="card-text">Unwind in oversized soaking tubs designed for two—perfect after a day of exploring or simply as an indulgent evening ritual.</p> 
+                                <div class="d-flex justify-content-between align-items-center"> 
+                                    <div class="btn-group"> 
+                                        <button type="button" class="btn btn-sm btn-outline-light">More Info
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>  
+                    <!--CARD 4 -->
+                    <div class="carousel-card"> 
+                        <div class="card shadow-sm h-100">
+                            <img src="./images/picnic_basket.png" class="card-img-top img-fluid"> 
+                            <div class="card-body"> 
+                                <h3>Gourmet Picnic Baskets</h3>
+                                <p class="card-text">Take a leisurely afternoon into the countryside with a beautifully packed picnic of local cheeses, fresh bread, and seasonal delights.</p> 
+                                <div class="d-flex justify-content-between align-items-center"> 
+                                    <div class="btn-group"> 
+                                        <button type="button" class="btn btn-sm btn-outline-light">More Info
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                            </svg>
+                                        </button>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--CARD 5 -->
+                    <div class="carousel-card"> 
+                        <div class="card shadow-sm h-100">
+                            <img src="./images/wine_tasting.png" class="card-img-top img-fluid"> 
+                            <div class="card-body"> 
+                                <h3>Vineyard Tour Concierge</h3>
+                                <p class="card-text">Let us arrange private tastings and scenic tours at the region’s most celebrated wineries, so you can sip and savor without a single logistical worry.</p> 
+                                <div class="d-flex justify-content-between align-items-center"> 
+                                    <div class="btn-group"> 
+                                        <button type="button" class="btn btn-sm btn-outline-light">More Info
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                            </svg>
+                                        </button>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--CARD 6 -->
+                    <div class="carousel-card"> 
+                        <div class="card shadow-sm h-100">
+                            <img src="./images/bedding.png" class="card-img-top img-fluid"> 
+                            <div class="card-body"> 
+                                <h3>Luxury Bedding</h3>
+                                <p class="card-text">Sink into cloud-soft bedding at day’s end, designed to make lingering in bed just a little more tempting.</p> 
+                                <div class="d-flex justify-content-between align-items-center"> 
+                                    <div class="btn-group"> 
+                                        <button type="button" class="btn btn-sm btn-outline-light">More Info
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                            </svg>
+                                        </button>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--CARD 7 -->
+                    <div class="carousel-card"> 
+                        <div class="card shadow-sm h-100">
+                            <img src="./images/bike.PNG" class="card-img-top img-fluid"> 
+                            <div class="card-body"> 
+                                <h3>Complimentary Bicycles</h3>
+                                <p class="card-text">Explore winding country roads and vineyard paths at your own pace with our charming, easy-to-ride bicycles.</p> 
+                                <div class="d-flex justify-content-between align-items-center"> 
+                                    <div class="btn-group"> 
+                                        <button type="button" class="btn btn-sm btn-outline-light">More Info
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                            </svg>
+                                        </button>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--CARD 8 -->
+                    <div class="carousel-card"> 
+                        <div class="card shadow-sm h-100">
+                            <img src="./images/wine_dinner.png" class="card-img-top img-fluid"> 
+                            <div class="card-body"> 
+                                <h3>Candlelit Evenings</h3>
+                                <p class="card-text">As the sun sets, the inn glows with soft candlelight, creating an atmosphere that invites quiet conversation and connection.</p> 
+                                <div class="d-flex justify-content-between align-items-center"> 
+                                    <div class="btn-group"> 
+                                        <button type="button" class="btn btn-sm btn-outline-light">More Info
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                            </svg>
+                                        </button>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--CARD 9 -->
+                    <div class="carousel-card"> 
+                        <div class="card shadow-sm h-100">
+                            <img src="./images/garden_nook.png" width="200"  class="card-img-top img-fluid"> 
+                            <div class="card-body"> 
+                                <h3>Private Garden Nooks</h3>
+                                <p class="card-text">Discover secluded corners throughout our gardens, ideal for reading, daydreaming, or enjoying a glass of wine together.</p> 
+                                <div class="d-flex justify-content-between align-items-center"> 
+                                    <div class="btn-group"> 
+                                        <button type="button" class="btn btn-sm btn-outline-light">More Info
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                            </svg>
+                                        </button>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+            
+            </div>
+        </div>     
+    </section>
+
+    <!-- DIVIDER IMAGE -->
+    <div class="text-center pt-5 pb-3">
+        <h2 class="display-5 fw-bold text-body-emphasis">Accommodations</h2>
+        <img src="./images/dividerA.PNG" class="d-block mx-auto" width="50%" height="30px">
+    </div>
+
+   <!-- ACCOMMODATIONS -->
+    <section id="accommodations-section">
+        <div class="container col-sm-12 col-md-10 col-lg-20  px-4 py-5 my-5">
+
+            <div class="accomodations-about">
+                <p>At Snapdragon Inn, each of our eight rooms offers its own quiet  kind of romance—thoughtfully designed for rest, connection, and the simple beauty of Paso Robles.
+                From the cozy Garden and Lavender Rooms to the light-filled Willow and Meadow, every space invites you to slow down and settle in. The Vineyard and Sunset Rooms bring wine country to your window, with views that linger long after dusk.
+                For something more indulgent, the Rose Balcony Room and Snapdragon Suite offer private outdoor space, sweeping vistas, and an extra touch of magic. Whichever you choose, you’ll find comfort, character, and just enough charm to make leaving the hardest part.</p>
+            </div>
+        </div>
+
+        <div class="accommodations-row">
+            <div class="row justify-content-center"> 
+
+                <!-- ROOM 1 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3 accommodations-card"> 
+                    <div class="card-body"> 
+                        <h4 class="my-0 mt-3 pt-5">The Garden</h4> 
+                        <h4 class="my-0">Room</h4>
+                        <p>A cozy retreat with a queen bed and tranquil garden views, perfect for a simple, restful escape.</p>
+                        <h1 class="card-title pricing-card-title">$99
+                            <small class="text-body-secondary fw-light">/night</small>
+                        </h1> 
+                        <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Check Availabillity
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </button>                      
+                    </div> 
+                </div> 
+
+                <!-- ROOM 2 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3 accommodations-card"> 
+                    <div class="card-body">
+                        <h4 class="my-0 mt-3 pt-5">The Lavender</h4>
+                        <h4 class="my-0">Room</h4>  
+                        <p>Soft, calming tones and a plush queen bed create a peaceful space to unwind after a day in the vineyards.</p>
+                        <h1 class="card-title pricing-card-title">$129
+                            <small class="text-body-secondary fw-light">/night</small></h1> 
+                        <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Check Availabillity
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </button> 
+                    </div> 
+                </div> 
+
+                <!-- ROOM 3 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3 accommodations-card"> 
+                    <div class="card-body"> 
+                        <h4 class="my-0 mt-3 pt-5">The Willow</h4>
+                        <h4 class="my-0">Room</h4>
+                        <p>Featuring two comfortable twin beds and gentle natural light, ideal for couples who prefer a bit more space.</p>
+                        <h1 class="card-title pricing-card-title">$149
+                            <small class="text-body-secondary fw-light">/mo</small></h1> 
+                        <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Check Availabillity
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </button> 
+                    </div> 
+                </div> 
+       
+                <!-- ROOM 4 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3 accommodations-card"> 
+                    <div class="card-body"> 
+                        <h4 class="my-0 mt-3 pt-5">The Meadow</h4> 
+                        <h4 class="my-0">Room</h4>
+                        <p>A bright and airy room with a queen bed and views of open fields that invite slow mornings and deep breaths.</p>
+                        <h1 class="card-title pricing-card-title">$179
+                            <small class="text-body-secondary fw-light">/night</small></h1>  
+                        <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Check Availabillity
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </button>  
+                    </div> 
+                </div> 
+
+                <!-- ROOM 5 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3 accommodations-card"> 
+                    <div class="card-body"> 
+                        <h4 class="my-0 mt-3 pt-5">The Vineyard</h4> 
+                        <h4 class="my-0">Room</h4>
+                        <p>Overlooking nearby vines, this queen room offers a true taste of wine country charm.</p>
+                        <h1 class="card-title pricing-card-title">$229
+                            <small class="text-body-secondary fw-light">/night</small></h1> 
+                        <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Check Availabillity
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </button> 
+                    </div> 
+                </div> 
+
+                <!-- ROOM 6 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3 accommodations-card"> 
+                    <div class="card-body">
+                        <h4 class="my-0 mt-3 pt-5">The Sunset</h4> 
+                        <h4 class="my-0">Room</h4> 
+                        <p>A king bed and sweeping sunset views make this room a favorite for romantic evenings and golden-hour relaxation.</p>
+                        <h1 class="card-title pricing-card-title">$279
+                            <small class="text-body-secondary fw-light">/night</small></h1> 
+                        <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Check Availabillity
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </button> 
+                    </div> 
+                </div> 
+
+                <!-- ROOM 7 -->
+                <div class="col-sm-12 col-md-6 accommodations-card"> 
+                    <div class="card-body"> 
+                        <h4 class="my-0 mt-3 pt-5">The Rose</h4> 
+                        <h4 class="my-0">Room</h4>
+                        <p>Step out onto your private balcony from a luxurious queen room, perfect for morning coffee or an evening glass of wine.</p>
+                        <h1 class="card-title pricing-card-title">$329
+                            <small class="text-body-secondary fw-light">/night</small></h1> 
+                        <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Check Availabillity
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </button> 
+                    </div> 
+                </div>
+                
+                <!-- ROOM 8 -->
+                <div class="col-sm-12 col-md-6 accommodations-card"> 
+                    <div class="card-body"> 
+                        <h4 class="my-0 mt-3 pt-5">The Snapdragon</h4>
+                        <h4 class="my-0">Suite</h4> 
+                        <p>Our most indulgent offering, featuring a spacious king bed, private balcony, and stunning sunset views—designed for unforgettable stays.</p>
+                        <h1 class="card-title pricing-card-title">$399
+                            <small class="">/night</small></h1> 
+                        <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Check Availabillity
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </button> 
+                    </div> 
+                </div> 
+
+            </div> 
+        </div>
+        </div> 
+    </div>
+        
+    </section>
+    
+    <!-- DIVIDER IMAGE -->
+    <div class="text-center pt-5 pb-3 mb-5">
+        <h2 class="display-5 fw-bold text-body-emphasis">Explore</h2>
+        <img src="./images/dividerA.PNG" class="d-block mx-auto" width="50%" height="30px">
+    </div>
+
+    <!-- EXPLORE -->
+    <section id="explore-section">
+        <div class="row explore-row row-cols-1 row-cols-lg-4 justify-content-center"> 
+            <div class="col d-inline-flex justify-content-center "> 
+                <div class="explore-body"> 
+                    <h3>                                    
+                        <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier"> 
+                                    <path d="M167.9,126.9c12-8.5,32.1-23.4,32.1-62.6c0-31.7-18.5-60-18.5-60H74.6c0,0-18.5,28.5-18.5,60.3c0,39.2,20.1,54.1,32,62.6 c13.8,9.8,34.8,28.5,34.8,31.4v78.6H75.9v13.4h102.9v-13.4h-45.7v-78.6C133.1,155.4,154.1,136.8,167.9,126.9z M81.8,14.6h92.5 c4.8,0,15.4,28.6,15.4,49.7c0,0.6,0,1.2,0,1.7H66.3c0-0.5,0-1,0-1.4C66.3,43.5,77,23,81.8,14.6z"></path> 
+                                </g>
+                            </svg>
+                        </div>  
+                    Wine Country</h3> 
+
+                    <ul class="explore-list">
+                        <li>Vineyard Tastings & Wine Trails
+                            <p>Discover the rolling hills surrounding Paso Robles, home to over 200 wineries offering everything from bold reds to crisp whites.</p>
+                        </li>
+                        <li>Private Wine Tours
+                            <p>Let the inn arrange a chauffeured experience so guests can sip freely and enjoy the scenery without worry.</p>
+                        </li>
+                        <li>Sunset Tastings
+                            <p>Evening tastings with golden-hour views—romantic, quiet, and unforgettable.</p>
+                        </li>
+                    </ul>
+                </div> 
+            </div> 
+            <div class="col d-inline-flex justify-content-center"> 
+                <div class="explore-body"> 
+                    <h3>
+                        <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-tree" viewBox="0 0 16 16">
+                                <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507"/>
+                            </svg>
+                        </div>  
+                    Scenic Outdoors</h3> 
+
+                    <ul class="explore-list">
+                        <li>Sensorio Paso Robles
+                            <p>"Field of Light". Wander through thousands of softly glowing lights across the hills—an immersive, almost dreamlike nighttime experience.</p>
+                        </li>
+                        <li>Lake Nacimiento
+                            <p>Perfect for kayaking, picnicking, or simply enjoying peaceful water views.</p>
+                        </li>
+                        <li>Hiking & Nature Walks
+                            <p>Rolling hills, oak trees, and open skies create ideal conditions for slow, scenic walks.</p>
+                        </li>
+                    </ul>
+                </div> 
+            </div> 
+            <div class="col d-inline-flex justify-content-center"> 
+                <div class="explore-body"> 
+                    <h3>
+                        <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-fork-knife" viewBox="0 0 16 16">
+                                <path d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z"/>
+                            </svg> 
+                        </div>  
+                    Local Flavors</h3> 
+
+                    <ul class="explore-list">
+                        <li>Rustic Dining
+                            <p>Paso Robles is known for fresh, seasonal cuisine paired perfectly with local wines.</p>
+                        </li>
+                        <li>Olive Oil Tastings
+                            <p>Sample locally produced olive oils—often paired with fresh bread and vineyard views.</p>
+                        </li>
+                        <li>Artisan Markets
+                            <p>Browse local goods, handmade items, and regional specialties.</p>
+                        </li>
+                    </ul>
+                </div> 
+            </div> 
+        </div>
+      
+    </section>
+
+    <!-- DIVIDER IMAGE -->
+    <div class="text-center pt-5 pb-3">
+        <img src="./images/dividerA.PNG" class="d-block mx-auto" width="50%" height="30px">
+    </div>
+ 
+    <!-- AWARDS -->
+    <div class=" d-flex awards-container pb-5 pt-3 border-bottom">
+        <img src="./images/tripadvisor_award.png" width="700">
+    </div>
+
+    <!-- FOOTER -->
+    <section id="footer-section">        
+        <div class="container footer-container mt-2"> 
+            <footer class="d-flex flex-wrap py-3 my-4"> 
+                <div class="col col-md-3 d-flex align-items-start"> 
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> 
+                        <svg class="bi" width="30" height="24" aria-hidden="true">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg> 
+                    </a> 
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2026 ElizabethRyanBloss</span> 
+                </div> 
+                <div class="col col-md-6 d-flex align-items-center">
+                    
+                    <p class="mb-3 mb-md-0 text-body-secondary"><small>
+                    DISCLAIMER: This portfolio site is a non-commercial project created for demonstration purposes. Some images and assets belong to their original creators and are used here only to showcase design concepts. All rights remain with their respective owners—no copyright infringement is intended, and this work is not for commercial use or public distribution.</small></p>
+                    
+                </div>
+                <ul class="nav col-md-3 justify-content-end list-unstyled d-flex"> 
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#" aria-label="Phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul> 
+            </footer> 
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

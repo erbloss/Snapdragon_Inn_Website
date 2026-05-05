@@ -1,0 +1,391 @@
+/* palette and background ----------- */
+#palette {
+    color: #C0CAD1;
+    color: #E9EDF1;
+    color: #858644;
+    color: #4C5169;
+    color: #619fe5;
+    color: #616ae5;
+    color: #8b819c;
+    color: #bc3707ec;
+}
+
+.banner-background {
+    background-image: url("./images/outdoor_lights.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+ 
+    margin: 0px;
+    padding: 0px;
+}
+
+/* standard components -------- */
+body {
+    h1 {
+        color: #bc3707ec;
+        font-weight: bold;
+        font-family: Tangerine, serif;
+        font-size: 8vh;
+        text-align: center;
+
+    }  
+
+    h2 {
+        text-align: center;
+        font-family: Tangerine, serif;
+        font-weight: bold;
+        font-size: 40px;
+        color: #4C5169;
+    }
+
+    h3 {
+        font-family: Inter;
+        font-size: 18px;
+    }
+    p {
+        font-family: Inter, sans-serif;
+        font-size: 13px;
+        font-style: italic;
+        text-align: justify;
+        color: #4C5169;
+    }
+
+    li {
+        font-family: Inter, sans-serif;
+    }
+
+    .btn{
+        font-family: Inter, sans-serif;
+        border-radius: 10px;
+        background-color: #616ae5; 
+        color: white;
+    }
+    .btn:hover {
+        background-color: #333fe8;
+        color: white;
+    }
+}
+
+/* navbar header -------------------------- */
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.566);
+    h1 {
+        padding:10px;
+        color:white;
+        border: white solid 3px;
+    }
+}
+
+.custom-navbar .nav-link,
+.custom-navbar {
+    color: #C0CAD1;
+}
+
+.custom-navbar .nav-link:hover {
+    color: white;
+}
+
+.nav-item > button {
+    font-weight: bold;
+    border: 3px solid #C0CAD1;
+    color:white;
+}
+ 
+/* about/intro section ------ */
+#about-section {
+    img {
+        border-radius: 10vh;
+        max-height: fit-content;
+    }
+    .container {
+        padding-top: 50px;
+    }
+    h2 {
+        color: #bc3707ec !important;
+        font-size: 100px;
+        text-align:left; 
+    }
+}
+
+@media (max-width: 992px) {
+    h2 {
+        text-align: center !important;
+    }
+}
+
+
+/* amenities section ----------------------- */
+.album h2 {
+    font-size: 45px
+}
+
+.album .row {
+    justify-content: center;
+}
+
+
+.card > img {
+    width: 100%;
+    height: 200px;
+    filter: grayscale(100%);
+}
+
+.card-body {
+    background-color:white;
+    color:#9d73a969
+}
+
+.card h3 {
+    text-align: center;
+    font-weight: bold;
+    color: #858644;
+}
+
+.card p {
+    font-size: 12px;
+    color: #4C5169;
+}
+
+/* card carousel -------- */
+.carousel-wrapper {
+    overflow-x: auto;
+    padding: 2rem;
+    scroll-behavior: smooth;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-item {
+    flex: 0 0 30%;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.carousel-card {
+    flex: 0 0 250px;
+    scroll-snap-align: center;
+    z-index: 1;
+    opacity: 0.7;
+    transform: scale(0.93);
+    transition: all 0.3s ease;
+}
+
+.carousel-card:last-child {
+    padding-right: 2rem;
+}
+
+.carousel-card:focus-within,
+.carousel-card:hover {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+    img {
+        filter: none;
+    }
+}
+
+/* explore section ------------ */
+.icon-square{
+    background-color:#858644;
+    padding: 5px;
+    fill: white;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 8px;
+}
+
+.explore-list > li {
+    list-style: none;
+    text-align: center;
+    p {
+        max-width:300px;
+    }
+}
+
+.explore-body > h3 {
+    text-align: center;
+    font-family: Tangerine;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color:#bc3707ec;
+}
+
+@media (max-width: 992px) {
+    .explore-row {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* accommodations section ------- */
+.accommodations-row {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    text-align:center;
+    align-items: center;
+    padding: 4rem;   
+
+    background-color: #616ae51d;
+    border-radius: 10vh;
+    padding: 30px;
+}
+
+.accommodations-card {
+    scale: calc(.8);
+    background-color: white;
+    border-radius: 10%;
+    margin: 5px;
+    h4 {
+        font-weight: bold;
+        font-size: 50px !important;
+        color:black;
+    }
+    h1 {
+        color: #bc3707ec;
+    }
+    .card-body {
+        padding: 0px 30px 50px;
+        background-color: rgba(237, 236, 236, 0.082);
+    }
+    button {
+        font-size: 14px;
+    }
+}
+
+.accommodations-card:focus-within, 
+.accommodations-card:hover {
+    border: 3px solid #bc3707ec;
+}
+
+#accommodations-section {
+    .container {
+        display:flex;
+        background-image: url(./images/snapdragon_logo2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20rem;
+        background-color: #858644;   
+        margin-bottom: 20px; 
+        border-radius: 8px;     
+    }
+    h4 {
+        font-family: Tangerine;
+        font-size: 2.5rem;
+    }
+    small {
+        font-size: 2rem;
+    }
+    p{
+        padding: 20px;
+        color: white;
+       
+    }
+    .card-body p {
+        color: #4C5169 ;
+        font-size:14px;
+        text-align:center;
+    }
+
+}
+
+/* footer ------------------------------- */
+.awards-container {
+    justify-content: center;
+    align-items: center;
+}
+#footer-section {
+    background-color: rgba(0, 0, 0, 0.733);
+    color:#a2a4a6;
+    p, span, svg{
+        color:#a2a4a6 !important;
+        text-align: start;
+    }
+    div {
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    small {
+        font-size: 6px;
+    }
+}
+
+/* Check form ---------*/
+#check-form {
+    background-color: #85864477;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10vh;
+    .check-form-container {
+        display: block;
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (min-width: 768px) and (max-width: 1044px) {
+        .container{
+            width: 100%;
+        }
+    }
+    form {
+        display: flex;
+    }
+    label {
+        color: white;
+        text-align: left;
+    }
+    button {
+        border-radius: 10px;
+        background-color: white;
+    }
+    .fields-container {
+        display: flex;
+        justify-content:
+        center ;
+        align-items: center;
+        margin: auto;
+        padding: 10px 10px;
+        flex-flow: row wrap;
+    }
+    .field-group-dates {
+        padding: 0 20px 0 0;
+        margin-top: 5px;
+        margin-bottom: 16px;
+        display: block;
+        box-sizing: border-box;
+    }
+    .field-group {
+        flex-grow: 1;
+      
+
+    } .field-group-btn {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 16px;
+        margin-left: 30px;
+        margin-top: 24px;
+
+        button {
+            background-color: #616ae5;
+            color: white;
+            border: 3px white solid;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+
+        button:hover {
+            border-color: #bc3707ec;
+            background-color: #333fe8;
+        }
+    }
+}

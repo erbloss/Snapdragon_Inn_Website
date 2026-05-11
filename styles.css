@@ -11,7 +11,7 @@
 }
 
 .banner-background {
-    background-image: url("./images/outdoor_lights.PNG");
+    background-image: url("./images/outdoor_lights.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -271,7 +271,7 @@ body {
 #accommodations-section {
     .container {
         display:flex;
-        background-image: url(./images/snapdragon_logo2.png);
+        background-image: url(./images/snapdragon_logo2.PNG);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 20rem;

@@ -1,6 +1,9 @@
 # Sample_Hotel_Website
 A mobile-responsive website to showcase UX/UI design concepts. The tech-stack currently includes HTML, CSS, and Bootstrap.
 
+## Deployment:
+Using Git Pages. https://erbloss.github.io/Snapdragon_Inn_Website/
+
 ## Next Steps:
 I will develop this into a functional web application by adding backend code to implement a reservation database.  I will use JavaScript's node.js framework and PostgreSQL database.
 
